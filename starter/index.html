@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delgado &amp; Sons Auto Repair | Tulsa, OK</title>
+<meta name="description" content="Family-owned auto repair on East 11th Street in Tulsa since 1994. Brakes, oil changes, diagnostics and A/C. Free estimates. Request an appointment online.">
+<meta name="theme-color" content="#1e5b45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delgado & Sons Auto Repair",
+  "telephone": "+1-918-555-0137",
+  "address": {"@type": "PostalAddress", "streetAddress": "2214 E 11th St", "addressLocality": "Tulsa", "addressRegion": "OK", "postalCode": "74104", "addressCountry": "US"},
+  "openingHours": ["Mo-Fr 07:30-18:00", "Sa 08:00-13:00"],
+  "priceRange": "$$"
+}
+</script>
+<style>
+:root {
+  --paper: #f7f7f5;
+  --ink: #1a1c1b;
+  --muted: #59605c;
+  --line: #d9dcd8;
+  --green: #1e5b45;
+  --green-dk: #154433;
+  --amber: #e8a41c;
+  --sign: "Big Shoulders Display", Impact, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 "Public Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+.wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: #fff; padding: 10px 14px; z-index: 50; }
+.skip:focus { left: 8px; }
+
+h1, h2, h3 { font-family: var(--sign); font-weight: 800; line-height: .95; letter-spacing: .005em; margin: 0; text-transform: uppercase; }
+h2 { font-size: clamp(40px, 7vw, 68px); }
+h3 { font-size: 26px; }
+section { padding: clamp(64px, 9vw, 112px) 0; }
+.lede { color: var(--muted); max-width: 50ch; margin: 14px 0 0; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 22px; border: 0; border-radius: 4px; cursor: pointer; text-decoration: none; font: 700 16px/1 "Public Sans", sans-serif; }
+.btn-amber { background: var(--amber); color: var(--ink); }
+.btn-amber:hover { background: #f2b43a; }
+.btn-ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.7); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); }
+.btn-green { background: var(--green); color: #fff; }
+.btn-green:hover { background: var(--green-dk); }
+
+/* header */
+header { background: var(--green); color: #fff; }
+header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; }
+.logo { font-family: var(--sign); font-weight: 900; font-size: 26px; line-height: 1; text-transform: uppercase; text-decoration: none; letter-spacing: .01em; }
+.logo span { color: var(--amber); }
+header nav { display: none; gap: 28px; font-weight: 600; font-size: 15px; }
+header nav a { text-decoration: none; opacity: .85; }
+header nav a:hover { opacity: 1; }
+.head-call { font-weight: 700; font-size: 15px; text-decoration: none; white-space: nowrap; }
+
+/* hero */
+.hero { position: relative; color: #fff; background: #111 center / cover no-repeat; padding: 0; }
+.hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,22,17,.35), rgba(10,22,17,.88) 70%); z-index: 1; }
+.hero .wrap { position: relative; z-index: 2; padding: clamp(96px, 22vw, 200px) 0 40px; }
+.hero h1 { font-size: clamp(56px, 13vw, 132px); line-height: .86; max-width: 9ch; }
+.hero p { max-width: 40ch; font-size: 18px; color: rgba(255,255,255,.85); margin: 20px 0 28px; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.facts { position: relative; z-index: 2; background: var(--ink); color: #fff; }
+.facts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; }
+.facts li { padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.12); font-size: 15px; color: rgba(255,255,255,.75); }
+.facts li:last-child { border-bottom: 0; }
+.facts strong { display: block; color: #fff; font-family: var(--sign); font-size: 24px; font-weight: 800; text-transform: uppercase; line-height: 1.1; }
+
+/* services */
+.svc { list-style: none; margin: 40px 0 0; padding: 0; border-top: 3px solid var(--ink); }
+.svc li { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.svc h3 { font-size: 24px; }
+.svc p { margin: 0; color: var(--muted); font-size: 15.5px; grid-column: 1; }
+.svc .price { grid-column: 2; grid-row: 1 / span 2; text-align: right; font-family: var(--sign); font-weight: 800; font-size: 30px; line-height: 1; white-space: nowrap; }
+.svc .price small { display: block; font: 500 13px/1.4 "Public Sans", sans-serif; color: var(--muted); }
+.note { margin: 20px 0 0; font-size: 15px; color: var(--muted); }
+
+/* shop */
+.shop { background: var(--green); color: #fff; }
+.shop .grid { display: grid; gap: 32px; align-items: center; }
+.shop img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.shop p { color: rgba(255,255,255,.82); max-width: 52ch; }
+.shop .sig { font-family: var(--sign); font-size: 22px; font-weight: 800; text-transform: uppercase; color: var(--amber); }
+
+/* reviews */
+.quotes { display: grid; gap: 28px; margin-top: 40px; }
+.quotes figure { margin: 0; padding-top: 18px; border-top: 3px solid var(--amber); }
+.quotes blockquote { margin: 0; font-size: 18px; line-height: 1.5; }
+.quotes figcaption { margin-top: 12px; color: var(--muted); font-size: 14.5px; }
+.stars { color: #b07800; letter-spacing: 2px; font-size: 15px; }
+
+/* booking */
+.book { background: #ecedea; }
+.book .grid { display: grid; gap: 40px; }
+form { background: #fff; border-radius: 6px; padding: 24px; box-shadow: 0 1px 0 var(--line); }
+.row { display: grid; gap: 16px; }
+label { display: block; font-weight: 600; font-size: 14.5px; margin-bottom: 6px; }
+input, select, textarea { width: 100%; min-height: 50px; padding: 12px 14px; font: 400 16px/1.3 "Public Sans", sans-serif; color: var(--ink); background: #fff; border: 1.5px solid #b9bfba; border-radius: 4px; }
+textarea { min-height: 96px; resize: vertical; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(30,91,69,.2); }
+.field { margin-bottom: 16px; }
+.hint { font-size: 13.5px; color: var(--muted); margin-top: 6px; }
+form .btn { width: 100%; margin-top: 4px; }
+.done { display: none; background: #fff; border-radius: 6px; padding: 28px 24px; border-top: 6px solid var(--green); }
+.done h3 { font-size: 34px; }
+.done dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 18px 0; font-size: 15.5px; }
+.done dt { color: var(--muted); }
+.done dd { margin: 0; font-weight: 600; }
+.visit dl { margin: 24px 0 0; display: grid; gap: 18px; }
+.visit dt { font-weight: 700; font-size: 14px; color: var(--muted); }
+.visit dd { margin: 2px 0 0; font-size: 17px; }
+.hours { width: 100%; max-width: 320px; border-collapse: collapse; font-size: 16px; }
+.hours td { padding: 3px 0; }
+.hours td:last-child { text-align: right; }
+
+footer { background: var(--ink); color: rgba(255,255,255,.65); font-size: 14px; padding: 32px 0 calc(32px + 76px); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+/* mobile action bar */
+.bar { position: fixed; inset: auto 0 0; z-index: 20; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(26,28,27,.96); }
+.bar .btn { min-height: 50px; }
+
+@media (min-width: 720px) {
+  .facts ul { grid-template-columns: repeat(3, 1fr); }
+  .facts li { border-bottom: 0; border-right: 1px solid rgba(255,255,255,.12); padding: 24px 24px 24px 0; }
+  .facts li + li { padding-left: 24px; }
+  .facts li:last-child { border-right: 0; }
+  .quotes { grid-template-columns: repeat(3, 1fr); }
+  .row.two { grid-template-columns: 1fr 1fr; }
+  form, .done { padding: 32px; }
+}
+@media (min-width: 960px) {
+  header nav { display: flex; }
+  .bar { display: none; }
+  footer { padding-bottom: 32px; }
+  .shop .grid { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .book .grid { grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
+  .svc { columns: 2; column-gap: 56px; }
+  .svc li { break-inside: avoid; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: up .7s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes up { from { opacity: 0; transform: translateY(16px); } }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Delgado <span>&amp;</span> Sons</a>
+    <nav aria-label="Main">
+      <a href="#services">Services &amp; prices</a>
+      <a href="#shop">Our shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book a repair</a>
+    </nav>
+    <a class="head-call" href="tel:+19185550137">(918) 555-0137</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <img src="https://images.unsplash.com/photo-1643701079732-3b1c7a797e3d?auto=format&fit=crop&w=1800&q=70" alt="" fetchpriority="high">
+    <div class="wrap">
+      <h1>Honest repairs on 11th Street</h1>
+      <p>Family-owned since 1994. We call with a price before we touch your car, and we never fix what isn't broken.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-amber" href="#book">Book a repair</a>
+        <a class="btn btn-ghost" href="tel:+19185550137">Call the shop</a>
+      </div>
+    </div>
+  </section>
+  <div class="facts">
+    <div class="wrap">
+      <ul>
+        <li><strong>Free estimates</strong>Written quote before any work starts</li>
+        <li><strong>12 mo / 12,000 mi</strong>Warranty on parts and labor</li>
+        <li><strong>ASE-certified</strong>Four techs, 80+ years combined</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services &amp; prices</h2>
+      <p class="lede">Most cars, most makes. Prices are starting points for a typical sedan. You get an exact quote after we look.</p>
+      <ul class="svc">
+        <li><h3>Oil change</h3><p>Full synthetic, new filter, fluid top-off and tire check.</p><span class="price">$59<small>from</small></span></li>
+        <li><h3>Brake pads</h3><p>Pads, rotor inspection and test drive. Per axle.</p><span class="price">$189<small>from</small></span></li>
+        <li><h3>Check engine light</h3><p>Computer scan plus a tech's diagnosis. Credited toward the repair.</p><span class="price">$89<small>flat</small></span></li>
+        <li><h3>A/C service</h3><p>Leak test, evacuate and recharge. Ready for an Oklahoma July.</p><span class="price">$129<small>from</small></span></li>
+        <li><h3>Tires &amp; alignment</h3><p>Mount, balance and four-wheel alignment.</p><span class="price">$99<small>alignment</small></span></li>
+        <li><h3>Battery replacement</h3><p>Free battery test. Installed with a 3-year warranty.</p><span class="price">$149<small>from</small></span></li>
+        <li><h3>Suspension &amp; steering</h3><p>Shocks, struts, tie rods and that clunk over speed bumps.</p><span class="price">Quote</span></li>
+        <li><h3>Pre-purchase inspection</h3><p>Buying used? We check 120 points and send you photos.</p><span class="price">$119<small>flat</small></span></li>
+      </ul>
+      <p class="note">Don't see your problem? Describe it in the booking form and we'll call you back.</p>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap grid">
+      <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=70" alt="Technician tightening a bolt in an engine bay" loading="lazy">
+      <div>
+        <h2>Three bays. Two generations.</h2>
+        <p>Ray Delgado opened this shop with one lift and a borrowed toolbox. Today his sons Marco and Luis run the floor, and Ray still answers the phone most mornings.</p>
+        <p>We explain what we found in plain English, show you the old parts, and give you a ride home if you need one.</p>
+        <p class="sig">— The Delgados</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <h2>What Tulsa says</h2>
+      <p class="lede">4.9 average from 380+ Google reviews.</p>
+      <div class="quotes">
+        <figure><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>The dealer quoted me $1,400 for brakes. Marco showed me I only needed front pads. Paid $210.</blockquote><figcaption>Jessica M., Midtown</figcaption></figure>
+        <figure><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>Called at 8, car was done by lunch, and they texted photos of the worn belt. That's how it should work.</blockquote><figcaption>Darnell W., Kendall-Whittier</figcaption></figure>
+        <figure><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><blockquote>Third car I've brought here. They talked me out of a repair I didn't need. Customer for life.</blockquote><figcaption>Patricia L., Brookside</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap grid">
+      <div class="visit">
+        <h2>Book a repair</h2>
+        <p class="lede">Pick a day and a drop-off time. We'll call within one business hour to confirm.</p>
+        <dl>
+          <div><dt>Address</dt><dd>2214 E 11th St, Tulsa, OK 74104<br><a href="https://maps.google.com/?q=2214+E+11th+St+Tulsa+OK+74104" target="_blank" rel="noopener">Get directions</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+19185550137">(918) 555-0137</a></dd></div>
+          <div><dt>Hours</dt><dd>
+            <table class="hours"><tbody>
+              <tr><td>Mon – Fri</td><td>7:30 am – 6:00 pm</td></tr>
+              <tr><td>Saturday</td><td>8:00 am – 1:00 pm</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </tbody></table>
+          </dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <form id="bookForm" novalidate>
+          <div class="row two">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required minlength="10"></div>
+          </div>
+          <div class="field"><label for="vehicle">Vehicle</label><input id="vehicle" name="vehicle" placeholder="e.g. 2017 Honda Accord" required></div>
+          <div class="field"><label for="service">What does it need?</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Oil change</option><option>Brake pads</option><option>Check engine light</option><option>A/C service</option><option>Tires &amp; alignment</option><option>Battery replacement</option><option>Suspension &amp; steering</option><option>Pre-purchase inspection</option><option>Something else</option>
+            </select>
+          </div>
+          <div class="row two">
+            <div class="field"><label for="date">Preferred day</label><input id="date" name="date" type="date" required><p class="hint">Monday to Saturday</p></div>
+            <div class="field"><label for="time">Drop-off time</label>
+              <select id="time" name="time" required>
+                <option value="">Choose a time</option><option>7:30 am</option><option>9:00 am</option><option>11:00 am</option><option>1:00 pm</option><option>3:00 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="notes">Anything we should know? <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="notes" name="notes" placeholder="Noises, warning lights, when it started"></textarea></div>
+          <button class="btn btn-green" type="submit">Request appointment</button>
+          <p class="hint" id="formError" role="alert" style="color:#a3261b"></p>
+        </form>
+
+        <div class="done" id="done" tabindex="-1" aria-live="polite">
+          <h3>Request sent</h3>
+          <p>Thanks, <span data-k="name"></span>. We'll call <span data-k="phone"></span> within one business hour to confirm.</p>
+          <dl>
+            <dt>Service</dt><dd data-k="service"></dd>
+            <dt>Vehicle</dt><dd data-k="vehicle"></dd>
+            <dt>Drop-off</dt><dd data-k="when"></dd>
+          </dl>
+          <button class="btn btn-green" type="button" id="again">Book another car</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Delgado &amp; Sons Auto Repair · Tulsa, Oklahoma</span>
+    <span>Demo site by your agency. Names, reviews and photos are placeholders.</span>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-ghost" href="tel:+19185550137">Call</a>
+  <a class="btn btn-amber" href="#book">Book a repair</a>
+</div>
+
+<script>
+const form = document.getElementById('bookForm');
+const date = document.getElementById('date');
+const done = document.getElementById('done');
+const err = document.getElementById('formError');
+const iso = d => new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
+date.min = iso(new Date());
+
+date.addEventListener('input', () => {
+  const sunday = date.value && new Date(date.value + 'T12:00').getDay() === 0;
+  date.setCustomValidity(sunday ? 'We are closed on Sundays. Pick Monday to Saturday.' : '');
+});
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!form.checkValidity()) {
+    const bad = form.querySelector(':invalid');
+    err.textContent = bad.validationMessage || 'Please fill in the highlighted field.';
+    bad.focus();
+    return;
+  }
+  err.textContent = '';
+  const data = Object.fromEntries(new FormData(form));
+  data.when = new Date(data.date + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + ' at ' + data.time;
+  // ponytail: demo only, saved in this browser. Swap for Formspree / shop email when live.
+  try { localStorage.setItem('delgado-request', JSON.stringify(data)); } catch {}
+  done.querySelectorAll('[data-k]').forEach(el => el.textContent = data[el.dataset.k]);
+  form.style.display = 'none';
+  done.style.display = 'block';
+  done.focus();
+});
+
+document.getElementById('again').addEventListener('click', () => {
+  form.reset();
+  done.style.display = 'none';
+  form.style.display = '';
+  form.querySelector('input').focus();
+});
+</script>
+</body>
+</html>

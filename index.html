@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Shop Website Packages</title>
+<meta name="description" content="Three website packages for garages, tint shops, detailers and auto repair. Every package includes mobile-first design and online appointment booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #fafafa; --ink: #15181b; --muted: #5d656b; --line: #e1e4e6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16.5px/1.6 "Geist", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.wrap { width: min(1200px, 100% - 32px); margin-inline: auto; }
+header { padding: clamp(56px, 9vw, 112px) 0 clamp(40px, 6vw, 64px); }
+h1 { margin: 0; font-size: clamp(36px, 6vw, 68px); line-height: 1.02; letter-spacing: -0.04em; font-weight: 600; max-width: 15ch; }
+header p { color: var(--muted); font-size: 18px; max-width: 54ch; margin: 20px 0 0; }
+
+.tiers { display: grid; gap: 20px; padding-bottom: 96px; }
+.tier { background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+.tier.pop { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
+.preview { position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #eceeef; border-bottom: 1px solid var(--line); }
+.preview iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 960px; border: 0; transform-origin: 0 0; pointer-events: none; }
+.preview span { position: absolute; right: 12px; bottom: 12px; background: var(--ink); color: #fff; font-size: 13.5px; font-weight: 500; padding: 7px 12px; border-radius: 999px; }
+.body { padding: 26px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+.name { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.name h2 { margin: 0; font-size: 22px; letter-spacing: -0.02em; font-weight: 600; }
+.badge { font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: var(--ink); color: #fff; }
+.price { margin: 14px 0 2px; font-size: 44px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; }
+.price small { font-size: 15px; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+.care { color: var(--muted); font-size: 15px; margin: 6px 0 0; }
+.fit { margin: 18px 0 0; font-size: 15.5px; }
+.tier ul { list-style: none; margin: 20px 0 26px; padding: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 9px; font-size: 15.5px; }
+.tier li { position: relative; padding-left: 24px; }
+.tier li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 11px; height: 6px; border-left: 2px solid var(--acc); border-bottom: 2px solid var(--acc); transform: rotate(-45deg); }
+.tier li.plus { font-weight: 600; padding-left: 0; }
+.tier li.plus::before { display: none; }
+.btn { margin-top: auto; display: flex; align-items: center; justify-content: center; min-height: 50px; border-radius: 999px; text-decoration: none; font-weight: 600; background: var(--acc); color: #fff; }
+.btn:hover { filter: brightness(1.12); }
+.demo-name { font-size: 14px; color: var(--muted); margin: 10px 0 0; text-align: center; }
+
+.compare { padding-bottom: 96px; }
+.compare h2 { font-size: clamp(26px, 3.4vw, 36px); letter-spacing: -0.03em; font-weight: 600; margin: 0 0 24px; }
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px; }
+th, td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+thead th { font-weight: 600; background: #f4f5f6; }
+tbody th { font-weight: 400; color: var(--muted); }
+td { text-align: center; }
+thead th:not(:first-child) { text-align: center; }
+tr:last-child > * { border-bottom: 0; }
+.y { color: #1b7a4b; font-weight: 600; }
+.n { color: #a2a9ae; }
+footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+
+@media (min-width: 980px) {
+  .tiers { grid-template-columns: repeat(3, 1fr); align-items: stretch; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Websites that book cars into bays</h1>
+  <p>Three packages for garages, tint shops, detailers and repair shops. Every site is built for the phone first, since that's where most of your customers find you, and every one takes appointments online.</p>
+</header>
+
+<main class="wrap">
+  <div class="tiers">
+    <article class="tier" style="--acc:#1e5b45">
+      <a class="preview" href="starter/" aria-label="Open the Starter demo"><iframe src="starter/" title="Starter demo preview" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe><span>Live demo</span></a>
+      <div class="body">
+        <div class="name"><h2>Starter</h2></div>
+        <p class="price">$1,200 <small>one time</small></p>
+        <p class="care">+ $49/mo hosting, updates and support</p>
+        <p class="fit">For a local shop that needs to look trustworthy and get calls this week.</p>
+        <ul>
+          <li>One-page site, mobile-first</li>
+          <li>Services with starting prices</li>
+          <li>Appointment request form, sent to your email and phone</li>
+          <li>Tap-to-call and directions buttons</li>
+          <li>Reviews, hours and Google Business link</li>
+          <li>Local search setup for your city</li>
+          <li>Live in 7 days</li>
+        </ul>
+        <a class="btn" href="starter/">View Starter demo</a>
+        <p class="demo-name">Delgado &amp; Sons Auto Repair, Tulsa</p>
+      </div>
+    </article>
+
+    <article class="tier pop" style="--acc:#0d5c63">
+      <a class="preview" href="growth/" aria-label="Open the Growth demo"><iframe src="growth/" title="Growth demo preview" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe><span>Live demo</span></a>
+      <div class="body">
+        <div class="name"><h2>Growth</h2><span class="badge">Most shops pick this</span></div>
+        <p class="price">$2,800 <small>one time</small></p>
+        <p class="care">+ $99/mo hosting, updates and support</p>
+        <p class="fit">For a busy shop that wants customers to book themselves, day or night.</p>
+        <ul>
+          <li class="plus">Everything in Starter, plus</li>
+          <li>Step-by-step online booking with open time slots</li>
+          <li>Price adjusts by vehicle size</li>
+          <li>Text confirmation and reminder</li>
+          <li>One interactive tool, like a tint shade preview</li>
+          <li>Tabbed price menu, gallery and FAQ</li>
+          <li>Sticky call and book bar on phones</li>
+          <li>Live in 14 days</li>
+        </ul>
+        <a class="btn" href="growth/">View Growth demo</a>
+        <p class="demo-name">Sonoran Film Co., Scottsdale</p>
+      </div>
+    </article>
+
+    <article class="tier" style="--acc:#7b1e2c">
+      <a class="preview" href="premium/" aria-label="Open the Premium demo"><iframe src="premium/" title="Premium demo preview" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe><span>Live demo</span></a>
+      <div class="body">
+        <div class="name"><h2>Premium</h2></div>
+        <p class="price">$5,900 <small>one time</small></p>
+        <p class="care">+ $199/mo hosting, updates and priority support</p>
+        <p class="fit">For high-end shops whose customers expect a dealership-level experience.</p>
+        <ul>
+          <li class="plus">Everything in Growth, plus</li>
+          <li>Custom brand look with signature motion</li>
+          <li>Visit builder with a live price estimate</li>
+          <li>Calendar booking with valet and loaner options</li>
+          <li>Add-to-calendar and visit tracking for customers</li>
+          <li>Membership plan pages</li>
+          <li>Connects to Tekmetric, Shopmonkey or your shop software</li>
+          <li>Call tracking and monthly report</li>
+          <li>Live in 3 to 4 weeks</li>
+        </ul>
+        <a class="btn" href="premium/">View Premium demo</a>
+        <p class="demo-name">Kessler Motorwerks, Denver</p>
+      </div>
+    </article>
+  </div>
+
+  <section class="compare" aria-labelledby="cmp">
+    <h2 id="cmp">Side by side</h2>
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col">Feature</th><th scope="col">Starter</th><th scope="col">Growth</th><th scope="col">Premium</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Mobile-first design</th><td class="y">Yes</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+          <tr><th scope="row">Services and prices</th><td class="y">Yes</td><td class="y">Tabbed menu</td><td class="y">Full menu</td></tr>
+          <tr><th scope="row">Appointment booking</th><td>Request form</td><td>Live time slots</td><td>Calendar + live estimate</td></tr>
+          <tr><th scope="row">Text confirmations</th><td class="n">—</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+          <tr><th scope="row">Interactive tool</th><td class="n">—</td><td>One</td><td>Custom</td></tr>
+          <tr><th scope="row">Valet and loaner options</th><td class="n">—</td><td class="n">—</td><td class="y">Yes</td></tr>
+          <tr><th scope="row">Customer visit tracker</th><td class="n">—</td><td class="n">—</td><td class="y">Yes</td></tr>
+          <tr><th scope="row">Shop software integration</th><td class="n">—</td><td class="n">—</td><td class="y">Yes</td></tr>
+          <tr><th scope="row">Pages</th><td>1</td><td>Up to 6</td><td>Up to 12</td></tr>
+          <tr><th scope="row">Delivery</th><td>7 days</td><td>14 days</td><td>3–4 weeks</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Demo businesses, names, reviews and photos are fictional and used for illustration only.</footer>
+
+<script>
+// scale each live preview iframe to fit its card
+const fit = () => document.querySelectorAll('.preview').forEach(p => p.querySelector('iframe').style.transform = `scale(${p.clientWidth / 1280})`);
+addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

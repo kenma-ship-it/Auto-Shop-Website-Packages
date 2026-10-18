@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kessler Motorwerks | European Car Service &amp; Paint Protection in Denver</title>
+<meta name="description" content="Factory-level service for Porsche, BMW, Audi and Mercedes-Benz, plus paint protection film and ceramic coating, in Cherry Creek, Denver. Valet pickup and loaner cars. Book online.">
+<meta name="theme-color" content="#121619">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Kessler Motorwerks",
+  "description": "European car service, paint protection film and ceramic coating.",
+  "telephone": "+1-303-555-0189",
+  "address": {"@type": "PostalAddress", "streetAddress": "300 Josephine St", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80206", "addressCountry": "US"},
+  "openingHours": ["Mo-Fr 07:30-18:00", "Sa 08:00-14:00"],
+  "priceRange": "$$$"
+}
+</script>
+<style>
+:root {
+  --silver: #e8eaeb;
+  --card: #f6f7f7;
+  --ink: #121619;
+  --graphite: #4b545a;
+  --line: #cdd2d5;
+  --ox: #7b1e2c;
+  --ox-dk: #5e1621;
+  --wide: "Michroma", "Eurostile", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--silver); color: var(--ink); font: 400 17px/1.65 "Hanken Grotesk", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--ox); outline-offset: 3px; }
+.dark :focus-visible, .hero :focus-visible { outline-color: #fff; }
+.wrap { width: min(1200px, 100% - 32px); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: #fff; color: var(--ink); padding: 10px 14px; z-index: 80; }
+.skip:focus { left: 8px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+h1, h2 { font-family: var(--wide); font-weight: 400; letter-spacing: -0.01em; line-height: 1.12; margin: 0; }
+h2 { font-size: clamp(26px, 4.2vw, 46px); max-width: 18ch; }
+h3 { margin: 0; font-size: 20px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+section { padding: clamp(80px, 11vw, 144px) 0; scroll-margin-top: 72px; }
+.lede { color: var(--graphite); max-width: 54ch; margin: 18px 0 0; font-size: 18px; }
+.dark { background: var(--ink); color: #fff; }
+.dark .lede { color: rgba(255,255,255,.66); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 26px; border: 0; border-radius: 2px; cursor: pointer; text-decoration: none; font-weight: 600; font-size: 15.5px; letter-spacing: .01em; }
+.btn-ox { background: var(--ox); color: #fff; }
+.btn-ox:hover { background: var(--ox-dk); }
+.btn-white { background: #fff; color: var(--ink); }
+.btn-white:hover { background: #dfe3e5; }
+.btn-line { background: transparent; box-shadow: inset 0 0 0 1px currentColor; }
+.btn-line:hover { background: rgba(127,127,127,.1); }
+
+/* header */
+.top { position: fixed; inset: 0 0 auto; z-index: 40; color: #fff; transition: background .3s, color .3s, box-shadow .3s; }
+.top.solid { background: rgba(232,234,235,.94); color: var(--ink); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 32px; height: 72px; }
+.logo { margin-right: auto; text-decoration: none; font-family: var(--wide); font-size: 15px; letter-spacing: .14em; line-height: 1.2; }
+.logo small { display: block; font-family: "Hanken Grotesk", sans-serif; font-size: 12px; letter-spacing: .04em; opacity: .7; }
+.top nav { display: none; gap: 28px; font-size: 15px; }
+.top nav a { text-decoration: none; opacity: .8; }
+.top nav a:hover { opacity: 1; }
+.top .btn { min-height: 42px; padding: 0 18px; font-size: 14.5px; }
+.top:not(.solid) .btn-ox { background: #fff; color: var(--ink); }
+
+/* hero */
+.hero { position: relative; padding: 0; background: #0c0f11; color: #fff; overflow: clip; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; opacity: .62; }
+.hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; mix-blend-mode: screen; pointer-events: none; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(12,15,17,.92), rgba(12,15,17,0) 55%), linear-gradient(180deg, rgba(12,15,17,.6), transparent 30%); pointer-events: none; }
+.hero .wrap { position: relative; z-index: 2; min-height: min(100svh, 960px); display: flex; flex-direction: column; justify-content: flex-end; padding: 140px 0 40px; }
+.hero h1 { font-size: clamp(34px, 6.6vw, 84px); max-width: 15ch; line-height: 1.06; }
+.hero p { max-width: 46ch; font-size: 18.5px; color: rgba(255,255,255,.78); margin: 26px 0 34px; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-foot { display: grid; grid-template-columns: 1fr; gap: 6px; margin-top: 56px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.18); font-size: 14.5px; color: rgba(255,255,255,.66); }
+.hero-foot b { color: #fff; font-weight: 600; }
+
+/* marques */
+.marques { padding: 28px 0; background: var(--ink); color: rgba(255,255,255,.55); border-top: 1px solid rgba(255,255,255,.08); }
+.marques ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 14px 36px; justify-content: center; font-family: var(--wide); font-size: 12.5px; letter-spacing: .12em; }
+
+/* services */
+.svc-grid { display: grid; gap: 56px; margin-top: 56px; }
+.svc-col h3 { font-family: var(--wide); font-weight: 400; font-size: 14px; letter-spacing: .1em; padding-bottom: 16px; border-bottom: 1px solid var(--ink); }
+.svc-col ul { list-style: none; margin: 0; padding: 0; }
+.svc-col li { display: grid; grid-template-columns: 1fr auto; gap: 2px 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.svc-col li b { font-weight: 600; font-size: 17.5px; }
+.svc-col li p { margin: 0; color: var(--graphite); font-size: 15.5px; grid-column: 1; }
+.svc-col li span { grid-column: 2; grid-row: 1 / span 2; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.svc-photo { margin-top: 64px; aspect-ratio: 21 / 9; overflow: hidden; }
+.svc-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* concierge */
+.concierge-grid { display: grid; gap: 48px; align-items: center; }
+.concierge-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.perks { list-style: none; margin: 40px 0 0; padding: 0; display: grid; gap: 28px; }
+.perks li { padding-left: 20px; border-left: 2px solid var(--ox); }
+.perks p { margin: 6px 0 0; color: rgba(255,255,255,.66); font-size: 16px; }
+
+/* booking */
+.book-grid { display: grid; gap: 28px; margin-top: 56px; align-items: start; }
+.panel { background: var(--card); padding: 26px 20px; border: 1px solid var(--line); }
+.panel + .panel { margin-top: 14px; }
+.panel legend, .panel > h3 { font-family: var(--wide); font-size: 15px; letter-spacing: .06em; padding: 0; margin-bottom: 18px; font-weight: 400; }
+fieldset.panel { margin-inline: 0; min-width: 0; }
+fieldset.panel > legend { float: left; width: 100%; }
+fieldset.panel > legend + * { clear: both; }
+.f-row { display: grid; gap: 14px; }
+.field label { display: block; font-weight: 600; font-size: 14.5px; margin-bottom: 6px; }
+.field input, .field select { width: 100%; min-height: 50px; padding: 12px 14px; border: 1px solid #aeb5ba; border-radius: 2px; background: #fff; font: 400 16px/1.3 "Hanken Grotesk", sans-serif; color: var(--ink); }
+.field input:focus, .field select:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px rgba(18,22,25,.15); }
+.checks { display: grid; gap: 8px; }
+.checks .grp { font-size: 14px; color: var(--graphite); margin: 14px 0 4px; }
+.checks .grp:first-child { margin-top: 0; }
+.ck { position: relative; display: block; cursor: pointer; }
+.ck input { position: absolute; opacity: 0; }
+.ck > span { display: grid; grid-template-columns: 22px 1fr auto; gap: 14px; align-items: center; padding: 14px 16px; background: #fff; border: 1px solid var(--line); transition: border-color .15s; }
+.ck > span::before { content: ""; width: 20px; height: 20px; border: 1.5px solid #8b9399; border-radius: 2px; background: #fff center / 14px no-repeat; }
+.ck input[type=radio] + span::before { border-radius: 50%; }
+.ck input:checked + span { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.ck input:checked + span::before { background-color: var(--ox); border-color: var(--ox); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
+.ck input:focus-visible + span { outline: 2px solid var(--ox); outline-offset: 2px; }
+.ck small { display: block; color: var(--graphite); font-size: 14px; }
+.ck em { font-style: normal; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.cal-head b { font-weight: 600; }
+.cal-head button { width: 44px; height: 44px; border: 1px solid var(--line); background: #fff; cursor: pointer; border-radius: 2px; }
+.cal-head button:disabled { opacity: .35; cursor: not-allowed; }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; }
+.cal .dow { font-size: 12.5px; color: var(--graphite); padding: 4px 0; }
+.cal button { aspect-ratio: 1; min-height: 40px; border: 1px solid transparent; background: #fff; cursor: pointer; font-variant-numeric: tabular-nums; border-radius: 2px; }
+.cal button:hover:not(:disabled) { border-color: var(--ink); }
+.cal button:disabled { background: transparent; color: #a3aaae; cursor: not-allowed; }
+.cal button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; margin-top: 16px; }
+.slots button { min-height: 46px; border: 1px solid var(--line); background: #fff; cursor: pointer; border-radius: 2px; font-variant-numeric: tabular-nums; }
+.slots button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.slots button:disabled { color: #a3aaae; text-decoration: line-through; cursor: not-allowed; background: transparent; }
+.slot-hint { font-size: 14.5px; color: var(--graphite); margin: 14px 0 0; }
+
+.estimate { background: var(--ink); color: #fff; padding: 22px 20px; position: sticky; bottom: 0; z-index: 5; }
+.estimate .lines { display: none; list-style: none; margin: 0 0 16px; padding: 0; font-size: 15px; }
+.estimate .lines li { display: flex; justify-content: space-between; gap: 16px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,.1); color: rgba(255,255,255,.8); }
+.estimate .lines li span:last-child { font-variant-numeric: tabular-nums; }
+.est-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.est-total small { display: block; font-size: 13px; color: rgba(255,255,255,.6); }
+.est-total b { font-family: var(--wide); font-weight: 400; font-size: 26px; font-variant-numeric: tabular-nums; }
+.estimate .note { display: none; font-size: 13.5px; color: rgba(255,255,255,.58); margin: 14px 0 0; }
+.err { color: #ffb4b4; font-size: 14.5px; margin: 10px 0 0; min-height: 0; }
+.err:empty { display: none; }
+
+dialog { border: 0; padding: 0; width: min(560px, 100% - 24px); background: var(--card); color: var(--ink); box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+dialog::backdrop { background: rgba(12,15,17,.7); }
+.dlg { padding: 32px 26px; }
+.dlg h2 { font-size: 26px; }
+.dlg .refno { font-family: var(--wide); font-size: 18px; letter-spacing: .08em; color: var(--ox); margin: 18px 0 0; }
+.dlg dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; margin: 20px 0; font-size: 15.5px; }
+.dlg dt { color: var(--graphite); }
+.dlg dd { margin: 0; font-weight: 500; }
+.dlg .acts { display: grid; gap: 8px; }
+
+/* tracker */
+.track-grid { display: grid; gap: 48px; }
+.track-form { display: flex; gap: 8px; margin-top: 28px; max-width: 460px; }
+.track-form input { flex: 1; min-width: 0; min-height: 52px; padding: 0 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.25); color: #fff; font: 500 16px/1 "Hanken Grotesk", sans-serif; letter-spacing: .06em; text-transform: uppercase; border-radius: 2px; }
+.track-form input::placeholder { color: rgba(255,255,255,.4); text-transform: none; letter-spacing: 0; }
+.track-hint { font-size: 14.5px; color: rgba(255,255,255,.55); margin-top: 12px; }
+.track-hint button { background: none; border: 0; padding: 0; color: #fff; text-decoration: underline; cursor: pointer; }
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { position: relative; padding: 0 0 26px 38px; color: rgba(255,255,255,.4); }
+.timeline li::before { content: ""; position: absolute; left: 0; top: 4px; width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.35); background: var(--ink); z-index: 1; }
+.timeline li::after { content: ""; position: absolute; left: 8px; top: 20px; bottom: -4px; width: 1px; background: rgba(255,255,255,.2); }
+.timeline li:last-child::after { display: none; }
+.timeline li.done { color: rgba(255,255,255,.75); }
+.timeline li.done::before { background: #fff; border-color: #fff; }
+.timeline li.now { color: #fff; }
+.timeline li.now::before { background: var(--ox); border-color: #fff; box-shadow: 0 0 0 5px rgba(123,30,44,.45); }
+.timeline b { display: block; font-weight: 600; font-size: 17px; }
+.timeline small { font-size: 14.5px; }
+.track-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); padding: 24px 22px; }
+.track-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.12); font-size: 15px; color: rgba(255,255,255,.7); }
+.track-meta b { color: #fff; font-family: var(--wide); font-weight: 400; letter-spacing: .06em; }
+.tech-note { margin: 4px 0 0; padding: 14px 16px; background: rgba(255,255,255,.06); border-left: 2px solid var(--ox); font-size: 15px; color: rgba(255,255,255,.85); }
+
+/* membership */
+.plans { display: grid; gap: 16px; margin-top: 56px; }
+.plan { background: var(--card); border: 1px solid var(--line); padding: 32px 26px; display: flex; flex-direction: column; }
+.plan.feat { background: var(--ink); color: #fff; border-color: var(--ink); }
+.plan h3 { font-family: var(--wide); font-weight: 400; font-size: 17px; letter-spacing: .06em; }
+.plan .cost { margin: 18px 0 4px; font-family: var(--wide); font-size: 40px; line-height: 1; }
+.plan .cost small { font-family: "Hanken Grotesk", sans-serif; font-size: 16px; color: var(--graphite); }
+.plan.feat .cost small { color: rgba(255,255,255,.6); }
+.plan > p { color: var(--graphite); margin: 8px 0 0; }
+.plan.feat > p { color: rgba(255,255,255,.66); }
+.plan ul { list-style: none; margin: 24px 0 28px; padding: 0; display: grid; gap: 10px; font-size: 16px; }
+.plan li { padding-left: 26px; position: relative; }
+.plan li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 12px; height: 7px; border-left: 2px solid var(--ox); border-bottom: 2px solid var(--ox); transform: rotate(-45deg); }
+.plan.feat li::before { border-color: #fff; }
+.plan .btn { margin-top: auto; }
+
+/* reviews */
+.big-quote { margin: 0; max-width: 28ch; font-family: var(--wide); font-size: clamp(22px, 3.4vw, 36px); line-height: 1.35; }
+.quote-by { margin-top: 24px; color: var(--graphite); }
+.more-quotes { display: grid; gap: 32px; margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--line); }
+.more-quotes blockquote { margin: 0; font-size: 18px; }
+.more-quotes figure { margin: 0; }
+.more-quotes figcaption { margin-top: 10px; color: var(--graphite); font-size: 15px; }
+
+/* visit */
+.visit-grid { display: grid; gap: 40px; }
+.visit-grid dl { margin: 0; display: grid; gap: 22px; }
+.visit-grid dt { font-size: 14px; color: rgba(255,255,255,.55); }
+.visit-grid dd { margin: 4px 0 0; font-size: 17px; }
+.map { aspect-ratio: 4 / 3; border: 0; width: 100%; filter: grayscale(1) contrast(1.05); }
+
+footer { background: #0c0f11; color: rgba(255,255,255,.5); font-size: 14px; padding: 36px 0 calc(36px + 76px); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+
+.bar { position: fixed; inset: auto 0 0; z-index: 30; display: grid; grid-template-columns: 1fr 1.5fr; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(18,22,25,.96); transition: transform .25s; }
+.bar.away { transform: translateY(110%); }
+.bar .btn-line { color: #fff; }
+
+@media (min-width: 720px) {
+  .hero-foot { grid-template-columns: repeat(3, auto); justify-content: start; gap: 40px; }
+  .f-row.two { grid-template-columns: 1fr 1fr; }
+  .f-row.three { grid-template-columns: 1.2fr 1.4fr .8fr; }
+  .panel { padding: 32px; }
+  .plans { grid-template-columns: repeat(3, 1fr); }
+  .more-quotes { grid-template-columns: 1fr 1fr; gap: 56px; }
+  .dlg { padding: 40px; }
+  .dlg .acts { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 980px) {
+  .top nav { display: flex; }
+  .bar { display: none; }
+  footer { padding-bottom: 36px; }
+  .svc-grid { grid-template-columns: 1fr 1fr; gap: 72px; }
+  .concierge-grid { grid-template-columns: 1fr 1fr; gap: 88px; }
+  .book-grid { grid-template-columns: 1.55fr 1fr; gap: 32px; }
+  .estimate { top: 96px; bottom: auto; padding: 32px; }
+  .estimate .lines, .estimate .note { display: block; }
+  .estimate .est-row { flex-direction: column; align-items: stretch; }
+  .estimate .btn { width: 100%; }
+  .track-grid { grid-template-columns: 1fr 1fr; gap: 88px; align-items: start; }
+  .visit-grid { grid-template-columns: 1fr 1.2fr; gap: 88px; align-items: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#hero">KESSLER<small>Motorwerks, Denver</small></a>
+    <nav aria-label="Main">
+      <a href="#service">Service</a>
+      <a href="#concierge">Concierge</a>
+      <a href="#track">Track a visit</a>
+      <a href="#care">Membership</a>
+    </nav>
+    <a class="btn btn-ox" href="#book">Book a visit</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero">
+    <img src="https://images.unsplash.com/photo-1601465621041-643db9cc051d?auto=format&fit=crop&w=2200&q=70" alt="" fetchpriority="high">
+    <canvas id="sheen" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1>European cars, kept like new</h1>
+      <p>Factory-level service for Porsche, BMW, Audi and Mercedes-Benz, with paint protection under the same roof. We pick up your car, send you a video inspection, and bring it back clean.</p>
+      <div class="ctas">
+        <a class="btn btn-white" href="#book">Book a visit</a>
+        <a class="btn btn-line" href="#track">Track your car</a>
+      </div>
+      <div class="hero-foot">
+        <span><b>Factory-trained</b> master technicians</span>
+        <span><b>OEM parts</b> and dealer-level diagnostics</span>
+        <span><b>Free valet</b> within 15 miles of Cherry Creek</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marques" aria-label="Makes we service">
+    <ul class="wrap"><li>PORSCHE</li><li>BMW</li><li>AUDI</li><li>MERCEDES-BENZ</li><li>VOLKSWAGEN</li><li>MINI</li><li>LAND ROVER</li><li>VOLVO</li></ul>
+  </div>
+
+  <section id="service">
+    <div class="wrap">
+      <h2>Dealer expertise, without the dealer</h2>
+      <p class="lede">The same diagnostic software and OEM parts as the dealership, usually for 30 to 40 percent less. Every price below is a starting point; you approve the final quote before we begin.</p>
+      <div class="svc-grid">
+        <div class="svc-col">
+          <h3>SERVICE &amp; REPAIR</h3>
+          <ul>
+            <li><b>Minor service</b><p>Oil and filter, fluid levels, multi-point inspection, service reset.</p><span>$295</span></li>
+            <li><b>Major service</b><p>Spark plugs, engine and cabin filters, brake fluid, full inspection.</p><span>$895</span></li>
+            <li><b>Brakes, per axle</b><p>OEM pads, rotors and wear sensors.</p><span>$780</span></li>
+            <li><b>Warning light diagnosis</b><p>Factory-software scan and a technician's written findings.</p><span>$185</span></li>
+            <li><b>Pre-purchase inspection</b><p>Compression test, scan history and a 40-photo report.</p><span>$350</span></li>
+          </ul>
+        </div>
+        <div class="svc-col">
+          <h3>PAINT &amp; PROTECTION</h3>
+          <ul>
+            <li><b>Full front PPF</b><p>Self-healing film on hood, fenders, bumper, mirrors and lights.</p><span>$2,400</span></li>
+            <li><b>Full body PPF</b><p>Every painted panel, gloss or satin, 10-year warranty.</p><span>$6,900</span></li>
+            <li><b>Ceramic coating, 5 year</b><p>Two-stage paint correction, coating on paint, wheels and glass.</p><span>$1,450</span></li>
+            <li><b>Paint correction</b><p>Removes swirls and light scratches before a sale or coating.</p><span>$650</span></li>
+            <li><b>Maintenance detail</b><p>For coated cars: decon wash, topper and interior refresh.</p><span>$295</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="svc-photo"><img src="https://images.unsplash.com/photo-1613921568536-555645be4032?auto=format&fit=crop&w=2000&q=70" alt="White Porsche under bright studio lights" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="dark" id="concierge">
+    <div class="wrap concierge-grid">
+      <img src="https://images.unsplash.com/photo-1771340742493-52fbd5476ccb?auto=format&fit=crop&w=1100&q=70" alt="Technician pouring oil into an engine" loading="lazy">
+      <div>
+        <h2>You never have to visit the shop</h2>
+        <p class="lede">Book from your phone, and we handle the rest. Most clients never see our front door, and that's the idea.</p>
+        <ul class="perks">
+          <li><h3>Valet pickup and return</h3><p>A driver collects your car from home or the office, and brings it back washed.</p></li>
+          <li><h3>Video inspection to your phone</h3><p>Your technician walks you through what they found. Approve or decline each item with one tap.</p></li>
+          <li><h3>Loaner cars</h3><p>Late-model Audi and BMW loaners, free for members.</p></li>
+          <li><h3>Live status updates</h3><p>Follow your car from check-in to ready with your visit number.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="wrap">
+      <h2>Build your visit</h2>
+      <p class="lede">Choose your services and a time. Your estimate updates as you go, and nothing is charged until you approve the work.</p>
+      <form class="book-grid" id="bookForm" novalidate>
+        <div>
+          <fieldset class="panel">
+            <legend>Your car</legend>
+            <div class="f-row three">
+              <div class="field"><label for="make">Make</label>
+                <select id="make" name="make" required>
+                  <option value="">Select</option><option>Porsche</option><option>BMW</option><option>Audi</option><option>Mercedes-Benz</option><option>Volkswagen</option><option>MINI</option><option>Land Rover</option><option>Volvo</option>
+                </select></div>
+              <div class="field"><label for="model">Model</label><input id="model" name="model" placeholder="e.g. Macan S" required></div>
+              <div class="field"><label for="year">Year</label><input id="year" name="year" inputmode="numeric" maxlength="4" placeholder="2021" required pattern="(19[89]|20[0-3])[0-9]"></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="panel">
+            <legend>Services</legend>
+            <div class="checks" id="svcChecks"></div>
+          </fieldset>
+
+          <fieldset class="panel">
+            <legend>Getting your car to us</legend>
+            <div class="checks" id="logChecks"></div>
+          </fieldset>
+
+          <fieldset class="panel">
+            <legend>Day and time</legend>
+            <div class="cal-head">
+              <button type="button" id="prevM" aria-label="Previous month">‹</button>
+              <b id="monthLabel" aria-live="polite"></b>
+              <button type="button" id="nextM" aria-label="Next month">›</button>
+            </div>
+            <div class="cal" id="cal"></div>
+            <div class="slots" id="slots" aria-label="Available times"></div>
+            <p class="slot-hint" id="slotHint">Choose a day to see open times.</p>
+          </fieldset>
+
+          <fieldset class="panel">
+            <legend>Your details</legend>
+            <div class="field"><label for="cname">Full name</label><input id="cname" name="cname" autocomplete="name" required></div>
+            <div class="f-row two" style="margin-top:14px">
+              <div class="field"><label for="cphone">Mobile number</label><input id="cphone" name="cphone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="cemail">Email</label><input id="cemail" name="cemail" type="email" autocomplete="email" required></div>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="estimate" aria-label="Estimate">
+          <ul class="lines" id="lines"></ul>
+          <div class="est-row">
+            <div class="est-total"><small>Estimated total</small><b id="total">$0</b></div>
+            <button class="btn btn-white" type="submit">Request visit</button>
+          </div>
+          <p class="err" id="err" role="alert"></p>
+          <p class="note">Estimate before tax. Your technician confirms the final price after inspection.</p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <section class="dark" id="track">
+    <div class="wrap track-grid">
+      <div>
+        <h2>Where's my car?</h2>
+        <p class="lede">Enter the visit number from your confirmation text to see live progress and notes from your technician.</p>
+        <form class="track-form" id="trackForm">
+          <label class="sr" for="refIn">Visit number</label>
+          <input id="refIn" placeholder="Visit number, e.g. KM-24817" autocomplete="off">
+          <button class="btn btn-white" type="submit">Track</button>
+        </form>
+        <p class="track-hint">No visit yet? <button type="button" id="sample">See a sample visit</button></p>
+      </div>
+      <div class="track-card" id="trackCard" aria-live="polite">
+        <div class="track-meta"><b id="tRef">KM-24817</b><span id="tCar">2019 Porsche 911 Carrera S</span></div>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="care">
+    <div class="wrap">
+      <h2>Kessler Care membership</h2>
+      <p class="lede">One monthly price for scheduled maintenance, priority booking and loaner cars. Cancel any time.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>ESSENTIAL</h3>
+          <p class="cost">$39<small> / month</small></p>
+          <p>For daily drivers that need the basics done right.</p>
+          <ul><li>One minor service a year</li><li>Free valet pickup</li><li>10% off parts and labor</li></ul>
+          <a class="btn btn-line" href="#book">Start with a visit</a>
+        </div>
+        <div class="plan feat">
+          <h3>SIGNATURE</h3>
+          <p class="cost">$89<small> / month</small></p>
+          <p>Our most popular plan for cars you care about.</p>
+          <ul><li>All scheduled maintenance</li><li>Free loaner on every visit</li><li>Two maintenance details a year</li><li>15% off parts and labor</li></ul>
+          <a class="btn btn-white" href="#book">Start with a visit</a>
+        </div>
+        <div class="plan">
+          <h3>COLLECTION</h3>
+          <p class="cost">$199<small> / month</small></p>
+          <p>For two or more cars, or a garage of weekend toys.</p>
+          <ul><li>Covers up to three cars</li><li>Battery tending and storage checks</li><li>Coating maintenance every quarter</li><li>A dedicated service advisor</li></ul>
+          <a class="btn btn-line" href="tel:+13035550189">Call to set up</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <blockquote class="big-quote">They found a coolant leak the dealer missed twice, sent me the video, and had my Cayenne back in my driveway the same evening.</blockquote>
+      <p class="quote-by">Rachel K., Cherry Creek. Signature member since 2022.</p>
+      <div class="more-quotes">
+        <figure><blockquote>The PPF on my M3 is invisible. You'd never know it's there until you see a rock chip that isn't.</blockquote><figcaption>Daniel O., Wash Park</figcaption></figure>
+        <figure><blockquote>Approving repairs from a video on my phone is how car service should work. Saved me $1,100 over the dealer quote.</blockquote><figcaption>Priya S., Highlands</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h2>Cherry Creek studio</h2>
+        <dl style="margin-top:36px">
+          <div><dt>Address</dt><dd>300 Josephine St, Denver, CO 80206</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+13035550189">(303) 555-0189</a></dd></div>
+          <div><dt>Hours</dt><dd>Mon–Fri, 7:30 am – 6:00 pm<br>Saturday, 8:00 am – 2:00 pm</dd></div>
+        </dl>
+      </div>
+      <iframe class="map" title="Map to Kessler Motorwerks" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=300+Josephine+St+Denver+CO+80206&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kessler Motorwerks, Denver, Colorado. Not affiliated with any manufacturer.</span>
+    <span>Demo site. Business, reviews and photos are placeholders.</span>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a class="btn btn-line" href="tel:+13035550189">Call</a>
+  <a class="btn btn-white" href="#book">Book a visit</a>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg">
+    <h2 id="dlgTitle">Visit requested</h2>
+    <p class="refno" id="dRef"></p>
+    <dl id="dList"></dl>
+    <p style="color:var(--graphite);font-size:15.5px;margin:0 0 22px">Your service advisor will text you within the hour to confirm. Save your visit number to track progress.</p>
+    <div class="acts">
+      <button class="btn btn-ox" type="button" id="ics">Add to calendar</button>
+      <button class="btn btn-line" type="button" id="goTrack">Track this visit</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const $ = id => document.getElementById(id);
+const money = n => '$' + n.toLocaleString('en-US');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- header + mobile bar ---------- */
+const hdr = $('top'), bar = $('bar');
+const onScroll = () => hdr.classList.toggle('solid', scrollY > innerHeight * .6);
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+new IntersectionObserver(([e]) => bar.classList.toggle('away', e.isIntersecting), { threshold: .05 }).observe($('book'));
+
+/* ---------- hero sheen: studio-light reflections drifting over paint ---------- */
+(() => {
+  const c = $('sheen'), ctx = c.getContext('2d');
+  let w, h, raf, visible = true;
+  // seeded random so the composition is the same every load
+  let seed = 7;
+  const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const tubes = Array.from({ length: 9 }, (_, i) => ({ y: .18 + i * .085 + rnd() * .03, amp: .03 + rnd() * .05, f: 1.2 + rnd() * 1.6, ph: rnd() * 6.28, a: .05 + rnd() * .08 }));
+  const size = () => { const r = devicePixelRatio || 1; w = c.clientWidth; h = c.clientHeight; c.width = w * r; c.height = h * r; ctx.setTransform(r, 0, 0, r, 0, 0); };
+  function draw(t) {
+    ctx.clearRect(0, 0, w, h);
+    // fine reflection lines, like a light ceiling mirrored in clear coat
+    for (const s of tubes) {
+      ctx.beginPath();
+      for (let x = 0; x <= w; x += 12) {
+        const u = x / w;
+        const y = h * (s.y + Math.sin(u * s.f * 3.14 + s.ph + t * .00012) * s.amp + (u - .5) * (u - .5) * .22);
+        x ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      }
+      ctx.strokeStyle = `rgba(220,230,240,${s.a})`;
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+    // one slow light bar sweeping across
+    const p = ((t * .00004) % 1.6) - .3;
+    const x = p * w;
+    const g = ctx.createLinearGradient(x - 160, 0, x + 160, 0);
+    g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(.5, 'rgba(255,255,255,.10)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.save(); ctx.translate(x, h / 2); ctx.rotate(-.32); ctx.translate(-x, -h / 2);
+    ctx.fillStyle = g; ctx.fillRect(x - 160, -h, 320, h * 3);
+    ctx.restore();
+  }
+  const loop = t => { draw(t); raf = visible ? requestAnimationFrame(loop) : 0; };
+  size(); addEventListener('resize', () => { size(); if (reduce) draw(9000); });
+  if (reduce) return draw(9000);
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible && !raf) raf = requestAnimationFrame(loop); }).observe(c);
+  raf = requestAnimationFrame(loop);
+})();
+
+/* ---------- booking builder ---------- */
+const SERVICES = [
+  ['Service & repair', [['minor', 'Minor service', 295], ['major', 'Major service', 895], ['brakes', 'Brakes, per axle', 780], ['diag', 'Warning light diagnosis', 185], ['ppi', 'Pre-purchase inspection', 350]]],
+  ['Paint & protection', [['ppf', 'Full front PPF', 2400], ['coat', 'Ceramic coating, 5 year', 1450], ['correct', 'Paint correction', 650], ['detail', 'Maintenance detail', 295]]]
+];
+const LOGISTICS = [['drop', 'I\'ll drop it off', 'Coffee and Wi-Fi while you wait', 0], ['valet', 'Valet pickup and return', 'Free within 15 miles', 0], ['loaner', 'Drop off and take a loaner', 'Free for members', 59]];
+const ALL = Object.fromEntries(SERVICES.flatMap(([, l]) => l).map(([id, n, p]) => [id, { n, p }]));
+const ck = (type, name, id, title, sub, right) =>
+  `<label class="ck"><input type="${type}" name="${name}" value="${id}"><span><span>${title}${sub ? `<small>${sub}</small>` : ''}</span><em>${right}</em></span></label>`;
+$('svcChecks').innerHTML = SERVICES.map(([g, list]) => `<p class="grp">${g}</p>` + list.map(([id, n, p]) => ck('checkbox', 'svc', id, n, '', money(p))).join('')).join('');
+$('logChecks').innerHTML = LOGISTICS.map(([id, n, s, p]) => ck('radio', 'log', id, n, s, p ? money(p) + '/day' : 'Free')).join('');
+$('logChecks').querySelector('input').checked = true;
+
+const form = $('bookForm');
+const state = { day: null, time: null };
+function estimate() {
+  const picked = [...form.querySelectorAll('[name=svc]:checked')].map(i => ALL[i.value]);
+  const log = LOGISTICS.find(l => l[0] === form.querySelector('[name=log]:checked').value);
+  const items = [...picked.map(s => [s.n, s.p]), ...(log[3] ? [['Loaner car, 1 day', log[3]]] : [])];
+  $('lines').innerHTML = items.length ? items.map(([n, p]) => `<li><span>${n}</span><span>${money(p)}</span></li>`).join('') : '<li><span>No services chosen yet</span><span></span></li>';
+  const sum = items.reduce((a, [, p]) => a + p, 0);
+  $('total').textContent = money(sum);
+  return { picked, log, sum };
+}
+form.addEventListener('change', () => { $('err').textContent = ''; estimate(); });
+estimate();
+
+/* calendar */
+const TIMES = ['7:30 am', '9:00 am', '10:30 am', '1:00 pm', '3:00 pm'];
+const today = new Date(); today.setHours(0, 0, 0, 0);
+let view = new Date(today.getFullYear(), today.getMonth(), 1);
+const key = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+// ponytail: fake availability from a hash. Live site reads the shop's calendar.
+const busy = s => [...s].reduce((a, c) => a * 33 + c.charCodeAt(0) >>> 0, 5381) % 7 < 2;
+function renderCal() {
+  const y = view.getFullYear(), m = view.getMonth();
+  $('monthLabel').textContent = view.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  $('prevM').disabled = y === today.getFullYear() && m === today.getMonth();
+  $('nextM').disabled = (y - today.getFullYear()) * 12 + m - today.getMonth() >= 2;
+  const first = new Date(y, m, 1).getDay(), n = new Date(y, m + 1, 0).getDate();
+  let html = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map(d => `<span class="dow" aria-hidden="true">${d}</span>`).join('');
+  html += '<span></span>'.repeat(first);
+  for (let d = 1; d <= n; d++) {
+    const dt = new Date(y, m, d), k = key(dt);
+    const off = dt <= today || dt.getDay() === 0;
+    html += `<button type="button" data-day="${k}" aria-pressed="${state.day === k}" ${off ? 'disabled' : ''} aria-label="${dt.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}${off ? ', closed' : ''}">${d}</button>`;
+  }
+  $('cal').innerHTML = html;
+}
+function renderSlots() {
+  if (!state.day) { $('slots').innerHTML = ''; return; }
+  const sat = new Date(state.day + 'T12:00').getDay() === 6;
+  $('slots').innerHTML = TIMES.map((t, i) => {
+    const off = busy(state.day + t) || (sat && i > 2);
+    return `<button type="button" data-time="${t}" aria-pressed="${state.time === t}" ${off ? 'disabled aria-label="' + t + ', booked"' : ''}>${t}</button>`;
+  }).join('');
+  $('slotHint').textContent = new Date(state.day + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + (state.time ? ' at ' + state.time : '. Choose a drop-off time.');
+}
+$('cal').addEventListener('click', e => {
+  const b = e.target.closest('[data-day]'); if (!b) return;
+  state.day = b.dataset.day; state.time = null; $('err').textContent = '';
+  renderCal(); renderSlots();
+  $('cal').querySelector(`[data-day="${state.day}"]`).focus();
+});
+$('slots').addEventListener('click', e => {
+  const b = e.target.closest('[data-time]'); if (!b) return;
+  state.time = b.dataset.time; $('err').textContent = '';
+  renderSlots();
+  $('slots').querySelector(`[data-time="${state.time}"]`).focus();
+});
+$('prevM').onclick = () => { view.setMonth(view.getMonth() - 1); renderCal(); };
+$('nextM').onclick = () => { view.setMonth(view.getMonth() + 1); renderCal(); };
+renderCal();
+
+/* submit */
+let last;
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const { picked, log, sum } = estimate();
+  const fail = (msg, el) => { $('err').textContent = msg; el && el.focus(); };
+  for (const id of ['make', 'model', 'year']) if (!$(id).checkValidity()) return fail(id === 'year' ? 'Enter a 4-digit model year.' : 'Tell us about your car.', $(id));
+  if (!picked.length) return fail('Choose at least one service.', form.querySelector('[name=svc]'));
+  if (!state.day || !state.time) return fail('Pick a day and an open time.', $('cal').querySelector('button:not(:disabled)'));
+  if (!$('cname').value.trim()) return fail('Enter your name.', $('cname'));
+  if ($('cphone').value.replace(/\D/g, '').length < 10) return fail('Enter a 10-digit mobile number.', $('cphone'));
+  if (!$('cemail').value || !$('cemail').checkValidity()) return fail('Enter a valid email.', $('cemail'));
+
+  const car = `${$('year').value} ${$('make').value} ${$('model').value}`;
+  const when = new Date(state.day + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + ' at ' + state.time;
+  last = { ref: 'KM-' + Math.floor(10000 + Math.random() * 90000), car, when, day: state.day, time: state.time, services: picked.map(s => s.n), log: log[1], sum };
+  // ponytail: demo keeps the visit in this browser. Live site posts to the shop management system (Tekmetric / Shopmonkey).
+  try { localStorage.setItem('kessler-visit', JSON.stringify(last)); } catch {}
+  $('dRef').textContent = 'Visit ' + last.ref;
+  $('dList').innerHTML = [['Car', car], ['When', when], ['Services', last.services.join(', ')], ['Logistics', last.log], ['Estimate', money(sum)]].map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+  $('dlg').showModal();
+});
+$('dlg').addEventListener('click', e => { if (e.target === $('dlg')) $('dlg').close(); });
+
+$('ics').addEventListener('click', () => {
+  const [hm, ap] = last.time.split(' '); let [H, M] = hm.split(':').map(Number);
+  if (ap === 'pm' && H < 12) H += 12;
+  const pad = n => String(n).padStart(2, '0');
+  const start = last.day.replace(/-/g, '') + 'T' + pad(H) + pad(M) + '00';
+  const end = last.day.replace(/-/g, '') + 'T' + pad(H + 1) + pad(M) + '00';
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Kessler Motorwerks//EN', 'BEGIN:VEVENT', 'UID:' + last.ref + '@kesslermotorwerks.com', 'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z', 'DTSTART;TZID=America/Denver:' + start, 'DTEND;TZID=America/Denver:' + end, 'SUMMARY:Kessler Motorwerks: ' + last.car, 'LOCATION:300 Josephine St\\, Denver\\, CO 80206', 'DESCRIPTION:Visit ' + last.ref + ' - ' + last.services.join('\\, '), 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })), download: last.ref + '.ics' });
+  a.click(); URL.revokeObjectURL(a.href);
+});
+$('goTrack').addEventListener('click', () => { $('dlg').close(); $('refIn').value = last.ref; track(last.ref); $('track').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); });
+
+/* ---------- visit tracker ---------- */
+const STAGES = [['Scheduled', 'Confirmation sent by text'], ['Checked in', 'Car received, keys tagged'], ['Inspection', 'Technician recording your video walkaround'], ['Awaiting approval', 'Review findings on your phone'], ['In service', 'Work in progress'], ['Quality check', 'Road test and final wash'], ['Ready', 'Valet or pickup scheduled']];
+const SAMPLE = { ref: 'KM-24817', car: '2019 Porsche 911 Carrera S', stage: 4, note: 'Rear pads at 3 mm. You approved replacement at 10:42 am. Estimated ready by 4:30 pm.' };
+function track(ref) {
+  ref = ref.trim().toUpperCase();
+  let v;
+  try { v = JSON.parse(localStorage.getItem('kessler-visit') || 'null'); } catch {}
+  const data = ref === SAMPLE.ref ? SAMPLE : v && v.ref === ref ? { ref, car: v.car, stage: 0, note: 'Booked for ' + v.when + '. We will text you when your car is checked in.' } : null;
+  if (!data) {
+    $('tRef').textContent = ref || '—'; $('tCar').textContent = 'Visit not found';
+    $('timeline').innerHTML = '<li class="now"><b>We couldn\'t find that visit number</b><small>Check your confirmation text, or call (303) 555-0189.</small></li>';
+    return;
+  }
+  $('tRef').textContent = data.ref; $('tCar').textContent = data.car;
+  $('timeline').innerHTML = STAGES.map(([t, s], i) => `<li class="${i < data.stage ? 'done' : i === data.stage ? 'now' : ''}"${i === data.stage ? ' aria-current="step"' : ''}><b>${t}</b><small>${s}</small>${i === data.stage ? `<p class="tech-note">${data.note}</p>` : ''}</li>`).join('');
+}
+$('trackForm').addEventListener('submit', e => { e.preventDefault(); track($('refIn').value); });
+$('sample').addEventListener('click', () => { $('refIn').value = SAMPLE.ref; track(SAMPLE.ref); });
+track(SAMPLE.ref);
+</script>
+</body>
+</html>
